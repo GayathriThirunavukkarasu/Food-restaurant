@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color:  orange;
+    display: flex;
+    justify-content: center; /* Center the navigation bar horizontally */
+}
+        .nav {
+            background-color: orange;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .nav ul li {
+            margin: 0 15px; /* Adjust margin for spacing */
+        }
+
+        .nav ul a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+
+        .nav ul a:hover {
+            color: red;
+        }
+
+        .Home {
+            text-align: center;
+            background-color: antiquewhite;
+            padding: 30px 10px;
+        }
+
+        .Home img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        .top .row {
+            
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .top img {
+            padding-right: 50px;
+            padding-left: 80px;
+            width: 75px;
+           
+            height:75px;
+        }
+
+        .About {
+            background-color: rgb(241, 194, 132);
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        .About img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #Dishes {
+            background-color: bisque;
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        #Dishes img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        .menu-content {
+            text-align: center;
+            background-color: burlywood;
+            padding: 10px 10px;
+        }
+
+        .menu-content .img-content {
+            margin: 5px;
+        }
+
+        .menu-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .ord {
+            text-align: center;
+            background-color: antiquewhite;
+            padding: 30px 10px;
+        }
+
+        .order-form {
+            margin-top: 20px;
+        }
+
+        .order-form input {
+            width: calc(100% - 20px);
+            margin: 10px 0;
+            padding: 10px;
+        }
+        #menu .row img {
+             padding-right: 50%;
+        }
+        
+        .menu-content {
+    background-color: burlywood;
+    padding: 30px 10px;
+}
+
+.menu-content .row {
+    display: flex; /* Ensure the items are laid out in a row */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to a new row */
+}
+
+.menu-content .row > div {
+    flex: 1; /* Allow each item to grow equally */
+    margin: 0 10px; /* Add space between items */
+    text-align: center;
+}
+
+.menu-content img {
+    max-width: 100%; /* Ensure images fit within their container */
+    height: auto;
+}
+
+
+        @media (max-width: 768px) {
+            .nav ul {
+                justify-content: center; /* Align items in the center on smaller screens */
+                flex-wrap: wrap;
+            }
+
+            .nav ul li {
+                margin: 10px 5px; /* Adjust margin for better spacing on smaller screens */
+            }
+
+            .nav ul a {
+                padding: 5px;
+            }
+
+            .top .row .col-md-3, .top .row .col-sm-6 {
+                flex: 1 0 100%;
+                margin-bottom: 10px;
+            }
+
+            .top img {
+                max-width: 150px;
+            }
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="nav">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#Dishes">DISHES</a></li>
+                <li><a href="#Menu">MENU</a></li>
+                <li><a href="#order">ORDER</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="home">
+        <div class="Home">
+            <h1>Welcome To Food Restaurant</h1><br><br>
+            <h2>Eat Fresh & Healthy Food</h2>
+            <img src="background-img.png" alt="Background">
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <center><h2>ABOUT US</h2></center>
+    <section id="About" class="container">
+        <div class="About">
+           
+            <h4>What We Make Spicy?</h4>
+            <img src="about-img.png" alt="About Us">
+        </div>
+    </section>
+
+    <h2 class="text-center">DISHES</h2><br>
+    <section id="Dishes" class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 text-center">
+                <h4>Chicken Chow</h4>
+                <img src="chicken chow.png" alt="Chicken Chow">
+                <div class="price">Price <strong>$100</strong></div>
+                <button class="btn btn-dark" style="background-color: darkorange;">Order Now</button>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <h4>Steak Vegetable</h4>
+                <img src="steaks vagitable.png" alt="Steak Vegetable">
+                <div class="price">Price <strong>$90</strong></div>
+                <button class="btn btn-dark" style="background-color: darkorange;">Order Now</button>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <h4>Grilled Chicken</h4>
+                <img src="grilled chicken.png" alt="Grilled Chicken">
+                <div class="price">Price <strong>$120</strong></div>
+                <button class="btn btn-dark" style="background-color: darkorange;">Order Now</button>
+            </div>
+            <div class="col-md-3 col-sm-6 text-center">
+                <h4>Pasta</h4>
+                <img src="Pasta.png" alt="Pasta">
+                <div class="price">Price <strong>$40</strong></div>
+                <button class="btn btn-dark" style="background-color: darkorange;">Order Now</button>
+            </div>
+        </div>
+    </section><br>
+
+    <h2 class="text-center">MENU</h2>
+    <section id="Menu" class="menu-content container">
+        <div class="row">
+            <div class="picha">
+                <img src="m4.png" alt="Pizza">
+                <h3>Pizza</h3>
+            </div>
+            <div class="burgeru">
+                <img src="m2.png" alt="Burger">
+                <h3>Burger</h3>
+            </div>
+            <div class="chick">
+                <img src="m3.png" alt="Chicken">
+                <h3>Chicken</h3>
+            </div>
+        </div>
+    </section><br>
+
+    <h2 class="text-center">Order Your Dishes</h2>
+    <section class="order container" id="order">
+        <div class="ord">
+            <div class="list">
+                <h4 style="color:black">Contact: <a href="#">9200000089</a></h4>
+                <h4 style="color:black">Email: <a href="#">foodord@gmail.com</a></h4><br>
+                <a href="#">Free Delivery</a><br>
+                <a href="#">Easy Payment</a><br>
+                <a href="#">24 Hour Service</a><br><br>
+            </div>
+        </div>
+        <div class="order-form">
+            <form action="#">
+                <input type="text" placeholder="Name" required><br>
+                <input type="number" placeholder="Phone Number" required><br>
+                                <input type="text" placeholder="Address" required><br>
+                <input type="text" placeholder="Order Details" required><br>
+                <button type="submit" class="btn btn-dark" style="background-color: darkorange;">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center" style="background-color: orange; padding: 10px; margin-top: 30px;">
+        <p>&copy; 2024 Food Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
